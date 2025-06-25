@@ -1,0 +1,28 @@
+GILDA (Gunshot Identification & Localization with Directional Array)
+🔫 Overview
+GILDA is a real-time gunshot detection and localization system designed for defense applications. It uses a 6-microphone MEMS array with FPGA pre-processing and a modified GCC-PHAT algorithm for Direction of Arrival (DoA) estimation, followed by a ResNet-50-based classifier for firearm identification. The system outputs real-time data to a secure GUI for military personnel.
+
+🚀 Features
+Real-time gunshot classification and localization
+
+Modified GCC-PHAT for Time Difference of Arrival (TDOA)
+
+ResNet-50 for gun type classification (AK47, M4A1, etc.)
+
+Tripod-mounted microphone array
+
+Biometric-authenticated GUI for army use
+
+Modular pipeline: FPGA (preprocessing) → ML Model → Visualization
+
+⚙️ Stack
+Hardware: Digital MEMS microphones, FPGA (Xilinx Zynq)
+
+DSP/ML: GCC-PHAT, TDOA, ResNet-50 (PyTorch)
+
+Backend: Python, FastAPI
+
+Frontend: React.js
+
+Data Pipeline: NumPy, Librosa, Torch, Matplotlib
+
